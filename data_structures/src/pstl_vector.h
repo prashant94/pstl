@@ -120,7 +120,7 @@ namespace pstl
 			Iterator last_internal = last.value_or(this->end());
 			const auto lt = [](Iterator a, Iterator b) { return *a < *b; };
 			const auto gt = [](Iterator a, Iterator b) { return *a > *b; };
-			bool sort_condition = sort_order_internal == pstl::sort_order::ascending;
+			bool sort_condition = !(sort_order_internal == pstl::sort_order::ascending);
 			T temp;
 			switch (sort_method_internal)
 			{

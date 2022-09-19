@@ -81,8 +81,8 @@ int main()
 	pstl::array<int, 5> intarr = { 1, 2, 3, 4, 5 };
 	std::cout << "Initialized Array: ";
 	intarr.print();
-	intarr.reverse();
-	std::cout << "Array Reverse: ";
+	intarr.reverse(intarr.begin() + 1,intarr.end() - 1);
+	std::cout << "Array Reverse Segment: ";
 	intarr.print();
 	std::cout << "Negative Indexing: ";
 	std::cout << intarr[-3] << ", " << intarr[-11] << std::endl;
