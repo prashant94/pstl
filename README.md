@@ -46,7 +46,7 @@ All PRNG classes are static singletons and have a randint and a randfloat method
 Usage: 
 ```c++
 for (int i = 0; i < 5; i++)
-		std::cout << pstl::random::mersenne_twister::randfloat() << " ";
+	std::cout << pstl::random::mersenne_twister::randfloat() << " ";
 ```
 Sample Output:
 ```
@@ -58,7 +58,7 @@ Sample Output:
 Usage: 
 ```c++
 for (int i = 0; i < 5; i++)
-		std::cout << pstl::random::linear_congruential_generator::randfloat() << " ";
+	std::cout << pstl::random::linear_congruential_generator::randfloat() << " ";
 ```
 Sample Output:
 ```
@@ -355,9 +355,6 @@ Output:
 ```
 vector reverse pstl | Timer took: 0.0003 ms
 ```
-
-
-
 
 # Licence
 MIT License
